@@ -32,5 +32,6 @@ Challenge 13: Count Unique Characters in a String 🔤
 Challenge 14: Leap Year Checker 📅
 Challenge 15 : Modular Exponentiation with pow() ⚡
 Challenge 16: Anagram Checker 🔄
+Challenge 17: Normalize File Extensions 🗂️
 
 others: Hangman
