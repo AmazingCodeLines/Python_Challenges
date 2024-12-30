@@ -1,5 +1,5 @@
 """
-Challenge: URL Cleaner 🌐
+Challenge 11: URL Cleaner 🌐
 
 ---------------------------------------------------
 Objective
@@ -54,7 +54,7 @@ What You’ll Learn
 """
 
 
-def clean_urls(urls):
+def cleaned_urls(urls):
     cleaned_urls = []
     exceptions = []
 
@@ -69,10 +69,11 @@ def clean_urls(urls):
             exceptions.append(url.rstrip("/"))
             continue
 
-        url = url.strip("/")
-        cleaned_urls.append(clean_url)
+        clean_url = clean_url.rstrip("/")
 
+        cleaned_urls.append(clean_url)
     return cleaned_urls, exceptions
+
 
 input_urls = [
     'http://example.com/',
@@ -82,23 +83,21 @@ input_urls = [
     'http://subdomain.example.net/path/to/resource/',
     'https://no-trailing-slash.com',
     'http://mixedprotocol.com/path/',
-    'ftp://unsupportedprotocol.com/',  # This will be treated as https
+    'ftp://unsupportedprotocol.com/', 
     'www.missingprotocol.com/',
     'http://example.com/path?query=123/',
 ]
 
-call_cleaned_urls, call_exceptions = clean_urls(input_urls)
-
-print("\n---- Original URLs ----")
+call_cleaned_urls, call_exceptions = cleaned_urls(input_urls)
+# print("\n ----- Original URLs _____")
 for url in input_urls:
     print(url)
 
-print("\n---- Cleaned URLs ----")
+print("\n ----- Cleaned URLs -----")
 for url in call_cleaned_urls:
     print(url)
 
-print("\n---- Exception URLs ----")
+print("\n ----- Exceptions -----")
 for url in call_exceptions:
-    print(url)    
-
+    print(url)
     
