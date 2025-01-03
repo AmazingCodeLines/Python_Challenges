@@ -33,5 +33,8 @@ Challenge 14: Leap Year Checker 📅
 Challenge 15 : Modular Exponentiation with pow() ⚡
 Challenge 16: Anagram Checker 🔄
 Challenge 17: Normalize File Extensions 🗂️
+Challenge 18: Random City Selector 🌍
+Challenge 19: Title Consistency Checker 📝
+
 
 others: Hangman
