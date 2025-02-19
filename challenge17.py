@@ -1,74 +1,14 @@
 """
 Challenge 17: Normalize File Extensions 🗂️
 
----------------------------------------------------
-Objective
----------------------------------------------------
-Write a Python program to normalize file extensions in filenames.
+Create a Python program that normalizes the file extension of a given filename. The program should:
 
-The program should:
-    - Convert filenames to lowercase.
-    - Replace the existing file extension with a new one.
-    - If no file extension exists, append the new extension.
-
----------------------------------------------------
-Rules
----------------------------------------------------
-1. Input:
-    - Accept a filename and a new extension.
-
-2. Logic:
-    - Convert the filename to lowercase to ensure case insensitivity.
-    - Locate the last dot (`.`) in the filename to identify the existing extension.
-    - Replace the current extension with the new extension, or append the new extension if none exists.
-
-3. Output:
-    - Return the filename with the normalized extension.
-
----------------------------------------------------
-Examples
----------------------------------------------------
-1. Input:
-    - Filename: `"My_Document.TXT"`
-    - New Extension: `".md"`
-   Output: `"my_document.md"`
-
-2. Input:
-    - Filename: `"IMAGE.JPEG"`
-    - New Extension: `".png"`
-   Output: `"image.png"`
-
-3. Input:
-    - Filename: `"README"`
-    - New Extension: `".txt"`
-   Output: `"readme.txt"`
-
----------------------------------------------------
-Challenge Requirements
----------------------------------------------------
-1. Write a function `normalize_extension(filename, new_extension)` that:
-    - Converts the filename to lowercase.
-    - Replaces the existing extension or appends the new one.
-
-2. Handle:
-    - Filenames with multiple dots (e.g., `"archive.tar.gz"`).
-    - Filenames without any extension.
-
-3. Test the function with various filenames and extensions.
-
----------------------------------------------------
-Bonus Points
----------------------------------------------------
-1. Extend the program to validate file extensions (e.g., ensure they start with a dot `.`).
-2. Add functionality to strip extra whitespace from filenames before processing.
-3. Handle edge cases, such as filenames that already match the desired extension.
-
----------------------------------------------------
-What You’ll Learn
----------------------------------------------------
-- String manipulation techniques using `lower()`, `rfind()`, and slicing.
-- Handling optional components in strings (e.g., file extensions).
-- Writing reusable functions for file name processing.
+Define a function that:
+Converts the entire filename to lowercase.
+Checks if the filename already has an extension.
+If it does, replace the existing extension with the specified new extension.
+If it does not, append the new extension to the filename.
+Return the updated filename with the normalized extension.
 """
 
 

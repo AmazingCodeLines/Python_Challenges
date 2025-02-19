@@ -1,56 +1,19 @@
 """
 Challenge 11: URL Cleaner 🌐
 
----------------------------------------------------
-Objective
----------------------------------------------------
-Write a Python program to clean a list of URLs by standardizing their format and separating invalid or unsupported URLs.
+Challenge Description:
 
----------------------------------------------------
-Rules
----------------------------------------------------
-1. Input:
-    - A list of URLs, which may have inconsistent protocols (`http://`, `https://`, or none) or trailing slashes.
+Create a Python program that standardizes and cleans a list of URLs. The program should:
 
-2. Logic:
-    - If a URL starts with `http://`, replace it with `https://`.
-    - If a URL does not have any protocol (`://`), add `https://` as the default.
-    - Remove unnecessary trailing slashes from the URLs.
-    - Identify and separate URLs with unsupported protocols (e.g., `ftp://`).
-
-3. Output:
-    - Return two lists:
-        - **Cleaned URLs**: A list of standardized URLs.
-        - **Exception URLs**: A list of URLs with unsupported protocols or errors.
-
----------------------------------------------------
-Challenge Requirements
----------------------------------------------------
-1. Write a function `clean_urls(urls)` that:
-    - Accepts a list of URLs.
-    - Returns two lists: cleaned URLs and exception URLs.
-
-2. Process:
-    - Use string manipulation methods like `startswith()` and slicing to handle protocols and paths.
-
-3. Ensure:
-    - The cleaned URLs have consistent formatting.
-    - The exception URLs are identified and separated correctly.
-
----------------------------------------------------
-Bonus Points
----------------------------------------------------
-1. Extend the program to check for valid domain names in the URLs.
-2. Handle query parameters and fragments in the URLs without altering their structure.
-3. Allow the program to display detailed reasons why URLs are in the exceptions list (e.g., unsupported protocol, invalid format).
-
----------------------------------------------------
-What You’ll Learn
----------------------------------------------------
-- String manipulation techniques for processing and formatting data.
-- Handling different URL structures and edge cases.
-- Separating valid and invalid inputs programmatically.
-- Iterating through lists and applying conditional logic effectively.
+Define a function that:
+Converts all URLs to use the https:// protocol:
+If the URL starts with http://, replace it with https://.
+If the URL lacks a protocol, prepend https://.
+If the URL uses an unsupported protocol (e.g., ftp://), add it to an exceptions list.
+Remove all trailing slashes (/) from the URLs.
+Return:
+A list of cleaned URLs with consistent formatting.
+A separate list of URLs that could not be processed due to unsupported protocols.
 """
 
 

@@ -1,54 +1,14 @@
 """
-Challenge: Random Password Generator 🔐
+Challenge 2: Random Password Generator 🔐
 
----------------------------------------------------
-Objective
----------------------------------------------------
-Create a Python program that generates a random password based on user-defined criteria.
+Create a Python program that generates a random password based on user-defined criteria. The program should:
 
-The password must:
-    - Contain a specified number of letters.
-    - Contain a specified number of digits.
-    - Contain a specified number of symbols.
-    - Be randomized to avoid predictable patterns.
-
----------------------------------------------------
-Rules
----------------------------------------------------
-1. Input:
-    - Prompt the user to enter three separate numbers:
-        - Number of letters.
-        - Number of digits.
-        - Number of symbols.
-
-2. Randomness:
-    - Ensure each category is filled with random characters (letters, digits, symbols).
-    - Shuffle the characters to ensure the password is unpredictable.
-
-3. Output:
-    - Combine all the characters into a single randomized password.
-    - Display the generated password.
-
----------------------------------------------------
-Challenge Requirements
----------------------------------------------------
-1. The program must:
-    - Validate the user’s input to ensure it is a positive integer.
-    - Generate random letters, digits, and symbols based on the input values.
-
-2. Bonus Points:
-    - Implement error handling for invalid inputs (e.g., non-integer values or negative numbers).
-    - Add an option for the user to exclude ambiguous characters (e.g., `O`, `0`, `l`, `1`, etc.).
-    - Allow the user to choose the total password length and automatically distribute letters, digits, and symbols.
-
----------------------------------------------------
-What You’ll Learn
----------------------------------------------------
-- Using Python's `random` and `string` libraries for randomness.
-- Working with user input and input validation.
-- Combining and shuffling lists for secure password generation.
-
----------------------------------------------------"""
+Prompt the user to input the number of letters, digits, and symbols they want in their password.
+Generate a set of random letters (both uppercase and lowercase), digits, and symbols according to the specified quantities.
+Combine all the characters into a single collection.
+Shuffle the characters to ensure randomness.
+Display the final, randomly generated password.
+"""
 
 
 import random

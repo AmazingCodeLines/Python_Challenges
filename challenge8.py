@@ -1,59 +1,21 @@
 """ 
-Challenge: Silent Auction Program 🏆
+Challenge 8: Silent Auction Program 🏆
 
----------------------------------------------------
-Objective
----------------------------------------------------
-Write a Python program to simulate a silent auction. Participants enter their names and bids without knowing what others have bid. At the end, the program announces the highest bidder and their bid amount.
+Create a Python program that simulates a simple auction system. The program should:
 
----------------------------------------------------
-Rules
----------------------------------------------------
-1. Input:
-    - Prompt users to enter their name and bid amount.
-    - Allow multiple participants to submit bids.
-    - Ask if there are more bidders after each entry.
-    - End the bidding process when no more bidders are present.
-
-2. Logic:
-    - Store all bids in a dictionary where keys are participant names and values are their bid amounts.
-    - Determine the highest bid and the corresponding bidder.
-    - Sort all bids in descending order for final standings.
-
-3. Output:
-    - Announce the highest bidder and their bid amount.
-    - Display the final standings (all bids sorted in descending order).
-
----------------------------------------------------
-Challenge Requirements
----------------------------------------------------
-1. Write a function `get_highest_bidder(offers)` that:
-    - Accepts the dictionary of bids as input.
-    - Returns the sorted bids and the highest bidder.
-
-2. Handle user input:
-    - Ensure bids are numeric values.
-    - Gracefully handle invalid inputs, such as non-numeric bids.
-
-3. Loop:
-    - Allow multiple users to place bids until the auction is explicitly closed.
-
----------------------------------------------------
-Bonus Points
----------------------------------------------------
-1. Extend the program to allow ties:
-    - Display all bidders who submitted the highest bid.
-2. Add a minimum bid increment:
-    - Require each new bid to exceed the current highest bid by a certain amount.
-3. Format the output to display standings neatly, e.g., "Name: $Amount".
-
----------------------------------------------------
-What You’ll Learn
----------------------------------------------------
-- Using dictionaries to store and sort data.
-- Writing functions to encapsulate logic.
-- Handling loops for iterative user input.
-- Sorting and working with dictionary items.
+Continuously prompt users to enter:
+Their name.
+Their bid amount.
+Store each bid in a dictionary where the bidder's name is the key and the bid amount is the value.
+After each bid, ask if there are additional bidders:
+If yes, continue collecting bids.
+If no, stop the bidding process.
+Define a function that:
+Sorts the bids in descending order based on the bid amount.
+Identifies and returns the highest bidder along with the full list of sorted bids.
+Display:
+The name and bid amount of the highest bidder.
+The final standings of all bidders sorted by their bid amounts
 """
 
 

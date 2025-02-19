@@ -1,62 +1,18 @@
 """
-Challenge: Prime Number Checker 🔢
+Challenge 6: Prime Number Checker 🔢
 
----------------------------------------------------
-Objective
----------------------------------------------------
-Write a Python program to determine if a given integer is a prime number.
+Create a Python program that continuously checks whether a user-provided number is prime. The program should:
 
-A prime number is a natural number greater than 1 that is divisible only by 1 and itself.
-
----------------------------------------------------
-Rules
----------------------------------------------------
-1. Input:
-    - Prompt the user to input an integer.
-    - Allow the user to quit the program by entering `0`.
-
-2. Logic:
-    - A number is prime if:
-        - It is greater than 1.
-        - It is not divisible by any number other than 1 and itself.
-    - Use efficient methods to check for prime status:
-        - Immediately return `False` for numbers ≤ 1.
-        - Skip even numbers greater than 2.
-        - Check divisors only up to the square root of the number.
-
-3. Output:
-    - For valid inputs, display whether the number is prime or not.
-    - For invalid inputs (non-integer), display an appropriate error message.
-
-4. Loop:
-    - Allow the user to check multiple numbers without restarting the program.
-    - Exit gracefully when the user enters `0`.
-
----------------------------------------------------
-Challenge Requirements
----------------------------------------------------
-1. Write a function `is_prime(number)` that:
-    - Takes an integer as input.
-    - Returns `True` if the number is prime, otherwise returns `False`.
-
-2. Handle user input and provide feedback:
-    - Validate that the input is a valid integer.
-    - Display an error message for invalid inputs and prompt the user again.
-
----------------------------------------------------
-Bonus Points
----------------------------------------------------
-1. Optimize the `is_prime` function to skip even numbers and only check divisors up to the square root.
-2. Extend the program to display all prime numbers less than a given input (e.g., find all primes < 50).
-3. Add performance measurements to compare the efficiency of your solution with a simpler brute-force approach.
-
----------------------------------------------------
-What You’ll Learn
----------------------------------------------------
-- Writing efficient algorithms for mathematical problems.
-- Handling user input with validation and feedback.
-- Using loops for continuous interaction.
-- Applying modular arithmetic and mathematical reasoning in programming.
+Define a function that:
+Returns False for numbers less than or equal to 1, as these are not prime.
+Returns True for the number 2.
+Eliminates even numbers greater than 2 immediately.
+Checks for divisibility only by odd numbers up to the square root of the input number for efficiency.
+Implement a loop that:
+Prompts the user to enter an integer.
+Ends the loop and exits the application if the user enters 0.
+Displays whether the entered number is prime using the defined function.
+Handles invalid inputs gracefully by prompting the user again.
 """
 
 

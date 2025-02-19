@@ -1,67 +1,21 @@
 
 """
-Challenge: Build a Simple Calculator 🧮
+Challenge 12: Build a Simple Calculator 🧮
 
----------------------------------------------------
-Objective
----------------------------------------------------
-Write a Python program that allows users to perform basic arithmetic operations interactively.
+Create a Python calculator that can perform basic arithmetic operations. The program should:
 
-The calculator should:
-    - Add, subtract, multiply, and divide two numbers.
-    - Handle invalid inputs gracefully.
-    - Allow users to perform multiple calculations in a single session.
-
----------------------------------------------------
-Rules
----------------------------------------------------
-1. Input:
-    - Prompt the user to enter two numbers (float or integer).
-    - Prompt the user to choose an operation (`+`, `-`, `*`, `/`).
-    - Allow the user to continue performing calculations or exit the program.
-
-2. Logic:
-    - Use separate functions for each arithmetic operation (addition, subtraction, multiplication, and division).
-    - Use a dictionary to map operations (`+`, `-`, `*`, `/`) to their corresponding functions.
-    - Handle division by zero with a clear error message.
-
-3. Output:
-    - Display the result of the chosen operation in a user-friendly format.
-    - Provide error messages for invalid inputs or unsupported operations.
-
-4. Loop:
-    - Allow the user to perform calculations repeatedly until they choose to exit.
-
----------------------------------------------------
-Challenge Requirements
----------------------------------------------------
-1. Implement the following functions:
-    - `addition(first_number, second_number)`
-    - `subtraction(first_number, second_number)`
-    - `multiplication(first_number, second_number)`
-    - `division(first_number, second_number)` (ensure it handles division by zero).
-
-2. Use a dictionary to manage the mapping between operations and functions.
-
-3. Implement input validation for:
-    - Numeric values.
-    - Valid operations.
-
----------------------------------------------------
-Bonus Points
----------------------------------------------------
-1. Extend the calculator to support more operations, such as exponentiation (`^`) or modulo (`%`).
-2. Add functionality to handle multiple operations in a single input, e.g., "5 + 3 - 2".
-3. Allow the user to recall the result of the last calculation and use it in the next operation.
-4. Provide a history of all calculations performed during the session.
-
----------------------------------------------------
-What You’ll Learn
----------------------------------------------------
-- Writing reusable functions for specific tasks.
-- Handling user input and validation in interactive programs.
-- Using dictionaries to map operations to functions dynamically.
-- Implementing loops for continuous interaction with the user.
+Define separate functions for:
+Addition: Adds two numbers.
+Subtraction: Subtracts the second number from the first.
+Multiplication: Multiplies two numbers.
+Division: Divides the first number by the second, handling division by zero with an appropriate error message.
+Use a dictionary to map mathematical operators (+, -, *, /) to the corresponding functions.
+Implement robust input validation:
+Prompt the user repeatedly until they provide a valid numeric input.
+Ensure the user selects a valid mathematical operation.
+Continuously allow calculations until the user chooses to exit:
+After displaying each result, ask if the user wants to perform another calculation.
+Exit gracefully if the user chooses not to continue.
 """
 
 

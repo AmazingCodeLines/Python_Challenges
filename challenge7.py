@@ -1,63 +1,21 @@
 """
-Challenge: Caesar Cipher Encryption 🛡️
+Challenge 7: Caesar Cipher Encryption 🛡️
 
----------------------------------------------------
-Objective
----------------------------------------------------
-Write a Python program that encrypts text using the Caesar cipher.
+Create a Python program that encrypts text using a simple Caesar cipher. The program should:
 
-The Caesar cipher shifts each letter in the text by a fixed number of positions in the alphabet. Spaces and punctuation are preserved.
-
----------------------------------------------------
-Rules
----------------------------------------------------
-1. Input:
-    - Prompt the user to input a text string to encrypt.
-    - Prompt the user to input the shift value (an integer).
-    - Allow the user to quit the program by typing `quit`.
-
-2. Logic:
-    - For each letter in the text:
-        - If the letter is uppercase, shift it within the uppercase alphabet.
-        - If the letter is lowercase, shift it within the lowercase alphabet.
-        - If the character is not a letter (e.g., punctuation or space), keep it unchanged.
-    - Handle wrap-around for letters at the end of the alphabet (e.g., shifting `Z` by 1 gives `A`).
-
-3. Output:
-    - Display the encrypted text after applying the Caesar cipher.
-    - Handle invalid input for the shift value gracefully.
-
-4. Loop:
-    - Allow the user to encrypt multiple texts without restarting the program.
-    - Exit gracefully when the user types `quit`.
-
----------------------------------------------------
-Challenge Requirements
----------------------------------------------------
-1. Write a function `encrypt(secret_text, shift)` that:
-    - Takes a string and a shift value as inputs.
-    - Returns the encrypted text as output.
-
-2. Handle user input:
-    - Validate the shift value to ensure it is an integer.
-    - Provide appropriate error messages for invalid inputs.
-
----------------------------------------------------
-Bonus Points
----------------------------------------------------
-1. Modify the program to handle decryption:
-    - Add a function `decrypt(encrypted_text, shift)` to reverse the encryption.
-2. Allow the shift value to be negative for leftward shifting.
-3. Extend the program to allow the user to choose between encryption and decryption.
-4. Optimize for large shift values by reducing the shift to within the range of 0-25.
-
----------------------------------------------------
-What You’ll Learn
----------------------------------------------------
-- Implementing string manipulation techniques.
-- Using modular arithmetic for wrap-around logic.
-- Handling user input with validation and feedback.
-- Working with Python's `string` library for character operations.
+Define a function that:
+Takes a secret text and a shift value as input.
+Shifts each letter by the specified amount while maintaining:
+Uppercase letters as uppercase.
+Lowercase letters as lowercase.
+Wraps around the alphabet when the shift moves past 'Z' or 'z'.
+Preserves spaces, punctuation, and other non-alphabetic characters unchanged.
+Implement a loop that:
+Prompts the user for text to encrypt.
+Allows the user to exit by typing 'quit'.
+Asks the user for the desired numerical shift.
+Displays the encrypted text using the defined encryption function.
+Handles invalid input for the shift value with appropriate error messages.
 """
 
 

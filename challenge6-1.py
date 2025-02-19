@@ -1,53 +1,15 @@
 
 """
-Challenge: Optimized Prime Number Checker 🔢
+Challenge 6-1: Optimized Prime Number Checker 🔢
 
----------------------------------------------------
-Objective
----------------------------------------------------
-Write a Python program to check if a number is a prime number, using an optimized algorithm for efficiency.
+Write a Python function that determines whether a given number is a prime number. The function should:
 
----------------------------------------------------
-Rules
----------------------------------------------------
-1. Input:
-    - Prompt the user to enter a number to test for primality.
-
-2. Logic:
-    - A prime number is a natural number greater than 1, divisible only by 1 and itself.
-    - Use an optimized algorithm to check primality:
-        - Eliminate non-prime numbers ≤ 3 with special cases.
-        - Skip even numbers and multiples of 3.
-        - Test divisors up to the square root of the number, incrementing by 6 to check only potential factors.
-
-3. Output:
-    - Display whether the number is prime or not.
-
----------------------------------------------------
-Challenge Requirements
----------------------------------------------------
-1. Write a function `is_prime(number)` that:
-    - Accepts an integer as input.
-    - Returns `True` if the number is prime, and `False` otherwise.
-    - Implements the optimized algorithm for primality testing.
-
-2. Handle edge cases:
-    - Numbers ≤ 1 should return `False`.
-    - Numbers 2 and 3 should return `True`.
-
----------------------------------------------------
-Bonus Points
----------------------------------------------------
-1. Extend the program to find all prime numbers in a given range.
-2. Add functionality to count the total number of prime numbers in a range.
-3. Measure and compare the performance of the optimized algorithm against a naive approach.
-
----------------------------------------------------
-What You’ll Learn
----------------------------------------------------
-- Implementing optimized algorithms for mathematical problems.
-- Reducing computational complexity by skipping unnecessary checks.
-- Using loops and conditional logic effectively.
+Return False if the number is less than or equal to 1, as these are not prime numbers.
+Return True for the prime numbers 2 and 3.
+Efficiently eliminate multiples of 2 and 3 early in the process.
+Use a loop to check for divisibility by potential factors, optimizing by:
+Checking only numbers up to the square root of the given number.
+Skipping unnecessary checks by incrementing in steps of 6 (since prime numbers greater than 3 are of the form 6k ± 1).
 """
 
 

@@ -1,55 +1,14 @@
 
 """
-Challenge: Love Score Calculator 💖
+Challenge 4: Love Score Calculator 💖
 
----------------------------------------------------
-Objective
----------------------------------------------------
-Write a Python program that calculates the "Love Score" between two people based on the occurrence of specific letters in their names.
+Create a Python program that calculates a "love score" between two individuals based on their names. The program should:
 
----------------------------------------------------
-Rules
----------------------------------------------------
-1. Input:
-    - Prompt the user to enter their name.
-    - Prompt the user to enter the name of their loved one.
-
-2. Logic:
-    - Combine the two names into a single string (case-insensitive).
-    - Count the occurrences of the letters in the word "TRUE" to get the "True" count.
-    - Count the occurrences of the letters in the word "LOVE" to get the "Love" count.
-    - Combine the "True" count and the "Love" count to form the final Love Score (e.g., if True Count = 4 and Love Count = 7, the score is 47).
-
-3. Output:
-    - Display the Love Score in the format: 
-      `"The love score for [User Name] & [Loved One] is [Score]."`
-
----------------------------------------------------
-Challenge Requirements
----------------------------------------------------
-1. Write a function called `calculate_love_score` that:
-    - Accepts two names as inputs.
-    - Calculates and returns the Love Score.
-
-2. Make the program case-insensitive by converting all inputs to lowercase.
-
----------------------------------------------------
-Bonus Points
----------------------------------------------------
-1. Add validation to ensure the user enters non-empty names.
-2. Display a fun message based on the score:
-    - If the score is greater than 80, display: `"You are a perfect match!"`
-    - If the score is between 50 and 80, display: `"You are a good match!"`
-    - If the score is less than 50, display: `"You may need to work on your relationship."`
-
-3. Allow the user to calculate the Love Score for multiple pairs without restarting the program.
-
----------------------------------------------------
-What You’ll Learn
----------------------------------------------------
-- Using string manipulation and counting characters.
-- Writing and using custom functions.
-- Handling and combining user input for meaningful output.
+Prompt the user to input their first name and the name of their loved one.
+Combine both names and convert them to lowercase.
+Count the total occurrences of the letters in the word "TRUE" and the word "LOVE" within the combined names.
+Form a score by concatenating the counts of "TRUE" and "LOVE."
+Display the love score along with the names provided.
 """
 
 

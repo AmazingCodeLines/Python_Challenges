@@ -1,61 +1,20 @@
 """
 Challenge 19: Title Consistency Checker 📝
 
----------------------------------------------------
-Objective
----------------------------------------------------
-Create a function `check_title_consistency(titles)` that takes a list of titles and checks if all titles follow a consistent casing format.
+Create a Python program that checks the consistency of title formatting across a list of strings. The program should:
 
----------------------------------------------------
-Predefined Formats
----------------------------------------------------
-1. **Uppercase**: All letters are uppercase.
-2. **Lowercase**: All letters are lowercase.
-3. **Capitalized**: Only the first character of the title is uppercase; the rest are lowercase.
-4. **Title Case**: The first character of each word is uppercase; the rest are lowercase.
-
----------------------------------------------------
-Instructions
----------------------------------------------------
-1. **Define the Function**:
-    - Create a function `check_title_consistency(titles)` that:
-        - Returns the consistent format's name if all titles match one predefined format.
-        - Returns `"Inconsistent Formatting"` if the titles do not all match the same format.
-
-2. **Examples**:
-    ```python
-    titles1 = ["Introduction to Python", "Advanced Python Techniques", "Python in Data Science"]
-    print(check_title_consistency(titles1))  # Output: "Title Case"
-
-    titles2 = ["python basics", "Python Advanced", "PYTHON Intermediate"]
-    print(check_title_consistency(titles2))  # Output: "Inconsistent Formatting"
-    ```
-
-3. **Solution Approach**:
-    - **Define Format Checks**: For each format, determine a way to check if a title conforms to it.
-    - **Iterate and Compare**: For each format, check if all titles match the format.
-    - **Determine Consistency**:
-        - If all titles match exactly one format, return that format's name.
-        - If titles match multiple formats or none, return `"Inconsistent Formatting"`.
-
-4. **Edge Cases**:
-    - **Empty Titles**: An empty string (`""`) can be considered to match all formats since transformations on it result in an empty string.
-    - **Single Title**: A list with a single title should return the format it matches.
-    - **Multiple Matching Formats**: If all titles match more than one format, prioritize the most specific format or indicate inconsistency.
-
----------------------------------------------------
-Bonus Points
----------------------------------------------------
-1. Handle mixed-case formats (e.g., `PyThOn BasiCs`) and return `"Inconsistent Formatting"` for such cases.
-2. Extend the function to suggest corrections for inconsistent titles.
-3. Optimize the function to minimize redundant checks.
-
----------------------------------------------------
-What You’ll Learn
----------------------------------------------------
-- Implementing and applying string transformation methods.
-- Iterating through lists and comparing results.
-- Handling edge cases and ensuring robustness in algorithms.
+Define a function that:
+Evaluates each title against predefined formatting rules:
+Uppercase: All letters in the title are uppercase.
+Lowercase: All letters in the title are lowercase.
+Capitalized: Only the first letter of the first word is uppercase, and the rest are lowercase.
+Title Case: The first letter of each significant word is uppercase.
+Returns the matching format if all titles share the same style.
+Returns "Inconsistent Formatting" if no single format applies to all titles.
+Include various test cases to verify the function's correctness, handling:
+Titles with special characters, numbers, emojis, acronyms, and hyphenated words.
+Titles with different letter cases, leading/trailing spaces, and non-ASCII characters.
+Scenarios with an empty list or a single title.
 """
 
 
