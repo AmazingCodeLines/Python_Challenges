@@ -35,4 +35,5 @@ Challenge 16: Anagram Checker 🔄
 Challenge 17: Normalize File Extensions 🗂️
 Challenge 18: Random City Selector 🌍
 Challenge 19: Title Consistency Checker 📝
+Challenge 20: Dynamic User Profile Builder 🛠 
 
